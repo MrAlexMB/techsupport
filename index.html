@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSupport Pro - Профессиональная техническая поддержка и разработка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>TechSupport Pro</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Главная</a></li>
+                <li><a href="#services" class="nav__link">Услуги</a></li>
+                <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                <li><a href="#about" class="nav__link">О нас</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+            <div class="nav__contact">
+                <span class="nav__phone">+7 (495) 123-45-67</span>
+                <button class="btn btn--primary nav__cta">Получить помощь</button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Профессиональная техническая поддержка и разработка</h1>
+                <p class="hero__subtitle">Круглосуточная поддержка, разработка сайтов и создание Telegram-ботов для вашего бизнеса</p>
+                <div class="hero__cta">
+                    <button class="btn btn--primary btn--lg" id="get-support">Получить поддержку</button>
+                    <button class="btn btn--outline btn--lg" id="view-services">Наши услуги</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section__title">Наши услуги</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🛠️</div>
+                    <h3 class="service-card__title">Техническая поддержка</h3>
+                    <p class="service-card__description">Круглосуточная техническая поддержка, диагностика неисправностей, обслуживание систем и IT-консультации для бизнеса любого масштаба.</p>
+                    <ul class="service-card__features">
+                        <li>Круглосуточная доступность</li>
+                        <li>Удаленная поддержка</li>
+                        <li>Обслуживание систем</li>
+                        <li>Диагностика проблем</li>
+                        <li>Обновления безопасности</li>
+                    </ul>
+                    <button class="btn btn--outline service-card__btn" data-service="support">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">🌐</div>
+                    <h3 class="service-card__title">Веб-разработка</h3>
+                    <p class="service-card__description">Разработка сайтов под ключ, адаптивный дизайн, интеграция с CMS и создание современных веб-приложений.</p>
+                    <ul class="service-card__features">
+                        <li>Индивидуальная разработка</li>
+                        <li>Адаптивный дизайн</li>
+                        <li>Интеграция с CMS</li>
+                        <li>Электронная коммерция</li>
+                        <li>Оптимизация производительности</li>
+                    </ul>
+                    <button class="btn btn--outline service-card__btn" data-service="web">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">🤖</div>
+                    <h3 class="service-card__title">Telegram-боты</h3>
+                    <p class="service-card__description">ИИ-боты для Telegram, решения для автоматизации и пользовательские интеграции для бизнес-процессов.</p>
+                    <ul class="service-card__features">
+                        <li>Интеграция с ИИ</li>
+                        <li>Пользовательская логика</li>
+                        <li>Подключение к API</li>
+                        <li>Автоматизация</li>
+                        <li>Управление пользователями</li>
+                    </ul>
+                    <button class="btn btn--outline service-card__btn" data-service="bots">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title">Почему выбирают нас</h2>
+            <div class="features__grid">
+                <div class="feature">
+                    <div class="feature__icon">⚡</div>
+                    <h3 class="feature__title">Быстрый ответ</h3>
+                    <p class="feature__description">Среднее время ответа менее 30 минут</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">👨‍💻</div>
+                    <h3 class="feature__title">Команда экспертов</h3>
+                    <p class="feature__description">Сертифицированные специалисты с многолетним опытом</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🔒</div>
+                    <h3 class="feature__title">Безопасные решения</h3>
+                    <p class="feature__description">Безопасность корпоративного уровня для всех проектов</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">💰</div>
+                    <h3 class="feature__title">Конкурентные цены</h3>
+                    <p class="feature__description">Прозрачное ценообразование без скрытых платежей</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🎯</div>
+                    <h3 class="feature__title">Индивидуальные решения</h3>
+                    <p class="feature__description">Решения, адаптированные под ваши конкретные потребности</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">📞</div>
+                    <h3 class="feature__title">Поддержка 24/7</h3>
+                    <p class="feature__description">Круглосуточная техническая помощь</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Наши работы</h2>
+            <div class="portfolio__filters">
+                <button class="btn btn--outline portfolio__filter portfolio__filter--active" data-filter="all">Все</button>
+                <button class="btn btn--outline portfolio__filter" data-filter="website">Сайты</button>
+                <button class="btn btn--outline portfolio__filter" data-filter="bot">Боты</button>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio__item" data-category="website">
+                    <div class="portfolio__card">
+                        <div class="portfolio__image">
+                            <div class="portfolio__placeholder">🌐</div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3>Платформа электронной коммерции</h3>
+                            <p>Полнофункциональное решение для электронной коммерции с интеграцией платежей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="bot">
+                    <div class="portfolio__card">
+                        <div class="portfolio__image">
+                            <div class="portfolio__placeholder">🤖</div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3>Бот поддержки</h3>
+                            <p>ИИ-бот для поддержки клиентов с обработкой естественного языка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="website">
+                    <div class="portfolio__card">
+                        <div class="portfolio__image">
+                            <div class="portfolio__placeholder">🏢</div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3>Корпоративный сайт</h3>
+                            <p>Адаптивный корпоративный сайт с интеграцией CMS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="bot">
+                    <div class="portfolio__card">
+                        <div class="portfolio__image">
+                            <div class="portfolio__placeholder">⚙️</div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3>Бот автоматизации</h3>
+                            <p>Бот для автоматизации бизнес-процессов с интеграцией API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section__title">Отзывы клиентов</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">"Отличная техническая поддержка! Быстрое время ответа и профессиональное обслуживание."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>Александр Петров</strong>
+                        <span>Digital Solutions LLC</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">"Отличная команда разработчиков сайтов. Доставили именно то, что нам было нужно, точно в срок."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>Мария Сергеева</strong>
+                        <span>Интернет-магазин</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">"Потрясающая разработка Telegram-ботов. Значительно увеличили вовлеченность наших клиентов."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <strong>Дмитрий Волков</strong>
+                        <span>Tech Startup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h2>Связаться с нами</h2>
+                    <p>Готовы начать ваш проект? Свяжитесь с нами сегодня!</p>
+                    
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <strong>Телефон:</strong>
+                            <span>+7 (495) 123-45-67</span>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>Email:</strong>
+                            <span>info@techsupportpro.ru</span>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>Адрес:</strong>
+                            <span>Москва, Россия</span>
+                        </div>
+                        <div class="contact__detail">
+                            <strong>Часы работы:</strong>
+                            <span>Пн-Пт: 9:00-21:00<br>Сб-Вс: 10:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact__form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Имя *</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="service">Тип услуги</label>
+                        <select id="service" class="form-control">
+                            <option value="">Выберите услугу</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="web">Веб-разработка</option>
+                            <option value="bots">Telegram-боты</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Сообщение *</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>TechSupport Pro</h3>
+                    <p>Профессиональная техническая поддержка и разработка для вашего бизнеса.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Услуги</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Техническая поддержка</a></li>
+                        <li><a href="#services">Веб-разработка</a></li>
+                        <li><a href="#services">Telegram-боты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Компания</h4>
+                    <ul class="footer__links">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@techsupportpro.ru</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 TechSupport Pro. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widgets -->
+    <div class="chat-widgets">
+        <button class="chat-widget" id="telegram-chat">
+            <span>Telegram Бот</span>
+            <div class="chat-icon">📱</div>
+        </button>
+        <button class="chat-widget" id="ai-chat">
+            <span>ИИ Помощник</span>
+            <div class="chat-icon">🤖</div>
+        </button>
+    </div>
+
+    <!-- Telegram Chat Modal -->
+    <div class="chat-modal hidden" id="telegram-modal">
+        <div class="chat-modal__content">
+            <div class="chat-modal__header">
+                <h3>Telegram Бот поддержки</h3>
+                <button class="chat-modal__close" data-modal="telegram-modal">&times;</button>
+            </div>
+            <div class="chat-modal__messages" id="telegram-messages">
+                <div class="chat-message chat-message--bot">
+                    <div class="chat-message__content">👋 Привет! Я бот поддержки. Как могу вам помочь сегодня?</div>
+                </div>
+            </div>
+            <div class="chat-modal__quick-replies" id="telegram-quick-replies">
+                <button class="btn btn--outline btn--sm quick-reply" data-reply="Техническая поддержка">Техническая поддержка</button>
+                <button class="btn btn--outline btn--sm quick-reply" data-reply="Веб-разработка">Веб-разработка</button>
+                <button class="btn btn--outline btn--sm quick-reply" data-reply="Создание ботов">Создание ботов</button>
+                <button class="btn btn--outline btn--sm quick-reply" data-reply="Цены">Цены</button>
+                <button class="btn btn--outline btn--sm quick-reply" data-reply="Контакты">Контакты</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal hidden" id="ai-modal">
+        <div class="chat-modal__content">
+            <div class="chat-modal__header">
+                <h3>ИИ Помощник</h3>
+                <button class="chat-modal__close" data-modal="ai-modal">&times;</button>
+            </div>
+            <div class="chat-modal__messages" id="ai-messages">
+                <div class="chat-message chat-message--bot">
+                    <div class="chat-message__content">Привет! Я ваш ИИ помощник. Задавайте вопросы о наших услугах или получите мгновенную помощь!</div>
+                </div>
+            </div>
+            <div class="chat-modal__input">
+                <input type="text" id="ai-input" placeholder="Введите ваш вопрос..." class="form-control">
+                <button class="btn btn--primary" id="ai-send">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="modal-overlay hidden" id="modal-overlay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
